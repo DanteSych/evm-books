@@ -1,0 +1,21 @@
+{
+  "name": "minting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mint": "node ./mint/index.js",
+    "transfer": "node ./transfer/transfer.js",
+    "transfer-token": "node ./transferToken/transferToken.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ethers": "^5.7.2",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.3.1"
+  }
+}

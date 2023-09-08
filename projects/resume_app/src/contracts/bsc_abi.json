@@ -1,0 +1,495 @@
+{
+    "contractName": "ResumeContract",
+    "abi": [
+        {
+            "inputs": [],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "degree",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "institution",
+                    "type": "string"
+                }
+            ],
+            "name": "NewEducationAdded",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "jobTitle",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "company",
+                    "type": "string"
+                }
+            ],
+            "name": "NewExperienceAdded",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string"
+                }
+            ],
+            "name": "NewResumeAdded",
+            "type": "event"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_degree",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_institution",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_startDate",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_endDate",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_description",
+                    "type": "string"
+                }
+            ],
+            "name": "addEducation",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_jobTitle",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_company",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_startDate",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_endDate",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_description",
+                    "type": "string"
+                }
+            ],
+            "name": "addExperience",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_name",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_tagline",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_location",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_email",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string[]",
+                    "name": "_skills",
+                    "type": "string[]"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_aboutMe",
+                    "type": "string"
+                }
+            ],
+            "name": "addResume",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_github",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_linkedin",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_instagram",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_twitter",
+                    "type": "string"
+                }
+            ],
+            "name": "addSocialLinks",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_index",
+                    "type": "uint256"
+                }
+            ],
+            "name": "getEducation",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "degree",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "institution",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "startDate",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "endDate",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "description",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address"
+                }
+            ],
+            "name": "getEducationLength",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_index",
+                    "type": "uint256"
+                }
+            ],
+            "name": "getExperience",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "jobTitle",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "company",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "startDate",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "endDate",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "description",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address"
+                }
+            ],
+            "name": "getExperienceLength",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address"
+                }
+            ],
+            "name": "getResume",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string[]",
+                    "name": "",
+                    "type": "string[]"
+                },
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address"
+                }
+            ],
+            "name": "getSocialLinks",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "github",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "linkedin",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "instagram",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "twitter",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "owner",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "resumes",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "tagline",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "location",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "email",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "aboutMe",
+                    "type": "string"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "string",
+                            "name": "github",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "linkedin",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "instagram",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "twitter",
+                            "type": "string"
+                        }
+                    ],
+                    "internalType": "struct ResumeContract.SocialLinks",
+                    "name": "socialLinks",
+                    "type": "tuple"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "contractAddress": "0x14f5AFa142E255fef6456430813cbaE846AD5B88"
+}

@@ -1,0 +1,22 @@
+[
+    {
+      "wallet": "0xaec7E580301C0dD3BDD64c176ba43e3Cc5439ba9",
+      "amount": 0.0001
+    },
+    {
+      "wallet": "0x4d95C09b9F6d59e52ca45E596305774e88f52c35",
+      "amount": 0.0001
+    },
+    {
+      "wallet": "0xB8D26B3F97f2EE87aB3aA7e44460E965E8D44Db7",
+      "amount": 0.0001
+    },
+    {
+      "wallet": "0x83C5B96C5AA2E3f87b925829B1b44a516968CF73",
+      "amount": 0.0001
+    },
+    {
+      "wallet": "0xbBC169aA5Af22b104eC19bA2067794326b2BC85D",
+      "amount": 0.0001
+    }
+  ]
